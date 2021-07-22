@@ -7,7 +7,8 @@ const assertEqual = function (actual, expected) {
     console.log(`😅😅 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-const countOnly = function(allItems, itemsToCount) {const results = {}
+const countOnly = function(allItems, itemsToCount) {
+  const results = {}
 for (const item of allItems) {
   // console.log(results);
   if (results[item]) {
