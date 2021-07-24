@@ -32,11 +32,11 @@ const assertObjectsEqual = function (actual, expected) {
   //console.log(`Example label: ${inspect(actual)}`);
   if (eqObjects(actual, expected)) {
     console.log(
-      `:+1: :+1: :+1: Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`
+      `✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`
     );
   } else {
     console.log(
-      `:-1: :-1: :-1: Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`
+      `🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`
     );
   }
 };

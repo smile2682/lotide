@@ -4,7 +4,7 @@ const eqObjects = function (object1, object2) {
   } else {
     const keysObj1 = Object.keys(object1);
     for (let key of keysObj1) {
-      //console.log(Array.isArray(object1[key]));
+      console.log(Array.isArray(object1[key]));
       if (Array.isArray(object1[key])) {
         // console.log(object1[key]);
         // console.log(object2[key]);
@@ -35,14 +35,12 @@ function eqArrays(arrayA, arrayB) {
   }
   return true;
 }
-// let arr1 = [1, 2, 3];
-// let arr2 = [1, 2, 3];
-// console.log(arr1 === arr2);
+
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc)); // => true
+// console.log(eqObjects(cd, dc)); // => true
 const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(eqObjects(cd, cd2)); // => false
+// console.log(eqObjects(cd, cd2)); // => false
 const abc = {
   a: [1, 2],
   b: 4,
@@ -55,7 +53,7 @@ const bac = {
 };
 console.log(eqObjects(abc, bac)); // => false
 //assertEqual(eqObjects(cd, dc), true);
-//assertEqual(eqObjects(cd, cd2), false);
+// assertEqual(eqObjects(cd, cd2), false);
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 // const ab = { a: "1", b: "2" };

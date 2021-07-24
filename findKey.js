@@ -1,3 +1,11 @@
+const assertEqual = function (actual, expected) {
+  if (actual === expected) {
+    console.log(`😀😀Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`😅😅 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
 const findKey = function (obj,callback){
   for (key in obj){
       if(callback(obj[key])){
@@ -20,3 +28,4 @@ const test = findKey({
 }, x => x.stars === 2) // => "noma"
 
 console.log (test)
+assertEqual(test, 'noma')

@@ -1,3 +1,29 @@
+const eqArrays = function (arr1, arr2) {
+  if(arr1.length >= arr2.length){
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) {
+        return false;
+    } 
+  }return true;
+} else {
+  for (let i = 0; i < arr2.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+  } 
+}return true;
+}
+}
+
+const assertArraysEqual = function (actual, expected) {
+  if (eqArrays(actual,expected)) 
+  {
+    console.log(`😀😀Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`😅😅 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
+
 const takeUntil = function(array, callback) {
   // method 1
   // let output = [];
@@ -21,7 +47,7 @@ const takeUntil = function(array, callback) {
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
-// === < > are all boolean functions!
+// "=== < >" are all boolean functions!
 // function (x) {return x < 0}
 console.log(results1);
 
@@ -35,3 +61,5 @@ console.log(results2);
 // // [ 1, 2, 5, 7, 2 ]
 // ---
 // [ 'I\'ve', 'been', 'to', 'Hollywood' ]
+assertArraysEqual (results1,[ 1, 2, 5, 7, 2 ])
+assertArraysEqual (results2,[ 'I\'ve', 'been', 'to', 'Hollywood' ])

@@ -8,7 +8,10 @@ const assertEqual = function (actual, expected) {
 
 const findKeyByValue = function (obj, value) {
   let result = undefined;
+  // used for-of to loop over array of key of obj
   for (let key of Object.keys(obj)) {
+    // here use for-in is much eariser
+    // for (let key in obj) {
     if (obj[key] === value) {
       result = key;
     }
