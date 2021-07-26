@@ -23,3 +23,5 @@ const results1 = map(words, word => word[0]);
 console.log(results1);
 // console.log(map);=>this will only tell you that map is a function, it needs to be called and add argument to return result.
 assertEqual (results1[0],'g')
+
+module.exports = map;

@@ -42,3 +42,4 @@ console.log(without(words, ["lighthouse"])); // no need to capture return value 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 console.log (words)
 
+module.exports = without;

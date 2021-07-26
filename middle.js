@@ -1,4 +1,4 @@
-const assertArraysEqual = require ('./assertArraysEqual').assertArraysEqual
+const assertArraysEqual = require ('./assertArraysEqual')
 
 const middle = function (arr) {
   let newArr = [];
@@ -11,4 +11,4 @@ const middle = function (arr) {
   } return newArr;
 }
 
-module.exports = {middle, assertArraysEqual};
+module.exports = middle;

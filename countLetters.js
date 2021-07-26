@@ -38,3 +38,5 @@ console.log (countLetters("lighthouse in the house"))
 
 // console.log(countLetters("Lighthouse in the house"));
 assertEqual (countLetters("lighthouse in the house").l, 1)
+
+module.exports = countLetters;

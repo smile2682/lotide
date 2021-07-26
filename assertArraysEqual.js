@@ -10,5 +10,5 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-module.exports = {assertArraysEqual,eqArrays};
+module.exports = assertArraysEqual;
   
